@@ -1,0 +1,236 @@
+<!DOCTYPE hmtl>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>南璋鉉 X WeCode </title>
+    <meta chaset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ <style>
+     * { margin: 0; padding: 0; border: 0; box-sizing: border-box; font-size: 100%; font: inherit; vertical-align: baseline; }
+     ul, li { list-style: none; }
+     a { text-decoration: none; }     
+     body { width: 100%; line-height: 1; }
+     html { scroll-behavior: smooth; }
+     
+     .skip_nav a { position: absolute; top: -9999px; }
+     header { width: 100%; /*backdrop-filter: blur(5px);*/ background: #040d21; }
+     nav { width: 1600px; height: 80px; margin: 0 auto; padding: 18px 0px; /*background: red; */ }
+     nav::after { content: ''; display: block; clear: both; }
+     nav .logoText { width: 20%; line-height: px; float: left; }
+     nav .logoText p { font-size: 41px; font-weight: 900; line-height: 41px; background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; text-align: center; }
+     nav ul { width: 80%; float: left; }
+     nav ul::after { content: ''; display: block; clear: both; }
+     nav ul li { width: 33.33%; /*padding: 15px 0;*/ float: left; }
+     nav ul li a { width: 100%; height: 100%; /*padding: 11px 0;*/ display: block; font-size: 31px; line-height: 41px; text-align: center; color: #fafafa; }
+     nav ul li:hover a { color: #040d21; background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; }
+     
+     .mainWrap { width: 100%; }
+     .mainWrap section { width: 100%; min-height: 1000px; margin: 0 auto; padding-top: 80px; position: relative; }
+     .mainWrap section::after { content: ''; display: block; clear: both; }
+     .mainWrap section img { width: 100%; margin: 0px auto; }
+     
+     .mainWrap section.sec1 { height: calc(100vh - 80px); padding-top: 0px; background: #040d21; }
+     .mainWrap section.sec1 .titleWrap { position: absolute; top: 54%; left: 260px; }
+     .mainWrap section.sec1 .titleWrap h1 { font-size: 121px; font-weight: 600; color: #fff; }
+     .mainWrap section.sec1 .titleWrap h1::after { content: ''; display: block; margin: 10px 0 15px; border-bottom: 1px solid #fff; }
+     .mainWrap section.sec1 .titleWrap h1 b { font-size: 141px; font-weight: 600; color: #db469f; }
+     .mainWrap section.sec1 .titleWrap p { font-size: 31px; font-weight: 100; color: #fafafa; text-align: right; letter-spacing: 5px; }
+     .mainWrap section.sec1 .imgWrap { width: 1080px; margin: 0px auto; }
+     /*.mainWrap section.sec1 .imgWrap img { margin: 136px auto; }*/
+     .mainWrap section.sec1 .imgWrap img { margin: 107px 0 107px 240px; }
+     
+     .content_nav { width: 100%; height: 80px; backdrop-filter: blur(5px); z-index: 9; }
+     .content_nav ul { width: 1400px; margin: 0 auto; }
+     .content_nav ul::after { content: ''; display: block; clear: both; }
+     .content_nav ul li { width: 33.33%; padding: 0px 0; float: left; }
+     .content_nav ul li a { width: 100%; height: 100%; padding: 25px 0; display: block; font-size: 31px; font-weight: 600; line-height: 21px; text-align: center; color: #333; -webkit-text-stroke: 1px #fff; text-stroke: 1px #fff; }
+     .content_nav ul li:hover a { font-weight: 400; letter-spacing: 1px; background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; -webkit-text-stroke: 0; text-stroke: 0; }
+     
+     .mainWrap section.sec2 {/* height: calc(100vh - 80px); */ padding-top: 0px; background: #fff; }
+     
+     .mainWrap section.sec2 .leftSide { width: 50%; min-height: 1080px; padding: 0 4%; float: left; }
+     .mainWrap section.sec2 .leftSide::after { content: ''; display: block; clear: both; }
+     .mainWrap section.sec2 .rightSide { width: 50%; margin: 60px 0 100px; padding: 0 4%; float: left; }
+     .mainWrap section.sec2 .rightSide::after { content: ''; display: block; clear: both; }
+     /*.mainWrap section.sec2 .rightSide article > ul { height: inherit; }
+     .mainWrap section.sec2 .rightSide article > ul > li { height: 400px; }
+     .mainWrap section.sec2 .rightSide article > ul > li figure {  }
+     .mainWrap section.sec2 .rightSide article > ul > li figure img { width: 100%; }
+     .mainWrap section.sec2 .rightSide article > ul > li figure figcaption {  }*/
+     .mainWrap section.sec2 .rightSide article { width: 100%; }
+     .mainWrap section.sec2 .rightSide article ul.gallary_ul { width: 100%; display: flex; flex-basis: 1; flex-direction: row; flex-wrap: wrap; flex }
+     .mainWrap section.sec2 .rightSide article ul.gallary_ul::after { content: ''; display: block; clear: both; }
+     .mainWrap section.sec2 .rightSide article ul.gallary_ul li { width: 48%; margin: 4% 1%; }
+     .mainWrap section.sec2 .rightSide article ul.gallary_ul li figure {  }
+     .mainWrap section.sec2 .rightSide article ul.gallary_ul li figure img { width: 100%; }
+     .mainWrap section.sec2 .rightSide article ul.gallary_ul li figure figcaption { margin: 5% 0 0; font-size: 21px; text-align: center; }
+     
+     
+    .mainWrap section.sec3 { height: calc(100vh - 32px); padding: 275px 0; background: #040d21; }
+    /*.mainWrap section.sec3 { padding: 275px 0 !important; }*/
+    .mainWrap section.sec3 ul { width: 1400px; margin: 0 auto; }
+    .mainWrap section.sec3 ul::after { content: ''; display: block; clear: both; }
+    .mainWrap section.sec3 ul li { width: 31.33%; height: 452px; border: 9px solid #fff; border-radius: 51px; box-sizing: border-box; float: left; transition: 0.3s; }
+    .mainWrap section.sec3 ul li:hover { background: #fff; border: 9px double #040d21; transition: 0.3s; }
+    .mainWrap section.sec3 ul li:nth-child(2) { margin: 0 1.5%; }
+    .mainWrap section.sec3 ul li a { width: 100%; height: 100%; padding: 47px; display: block; }
+    .mainWrap section.sec3 ul li:nth-child(2) a { padding: 47px 62px; }
+    .mainWrap section.sec3 ul li:nth-child(3) a { padding: 72px 47px; }
+    .mainWrap section.sec3 ul li a i { font-size: 340px; color: #fff; transition: 0.5s; }
+    .mainWrap section.sec3 ul li:nth-child(1):hover a i { color: #db469f; transition: 0.5s; }
+    .mainWrap section.sec3 ul li:nth-child(2):hover a i { color: #7d68d0; transition: 0.5s; }
+    .mainWrap section.sec3 ul li:nth-child(3) a i { font-size: 290px; }
+    .mainWrap section.sec3 ul li:nth-child(3):hover a i { color: #2188ff; transition: 0.5s; }
+    /*.mainWrap section.sec3 ul li a img { width: 100%; }*/
+     
+     .footer { height: 32px; }
+     .footer::after { content: ''; display: block; clear: both; }
+     .footer p { padding: 6px; color: #333; }
+     
+</style>
+ <div class="skip_nav">
+     <a href="#secMid">본문 바로가기</a>
+ </div>
+    
+  <header>
+      <nav>
+          <div class="logoText" id="top">
+              <p>南璋鉉</p>
+          </div>
+          <ul>
+              <li><a href="#">Top</a></li>
+              <li><a href="#secMid">About Me</a></li>
+              <li><a href="#secBot">Link</a></li>
+          </ul>
+      </nav>
+  </header>
+  
+  <div class="mainWrap">
+     
+      <section class="sec1">
+          <div class="titleWrap">
+              <h1 style="">
+                  <b style="">I</b>ntroduce
+              </h1>
+              <p><strong style="font-weight: bold;"><span style="color: #2188ff;">W</span>eCode</strong> 37기 南璋鉉 </p>
+          </div>
+          <div class="imgWrap">
+              <img src="http://wwwww.dothome.co.kr/images/test/main_img.png" alt="mainImage">
+          </div>
+      </section>
+
+      <div class="content_nav" style="position: sticky; top: 0;">
+          <ul>
+              <li><a href="#">Top</a></li>
+              <li><a href="#secMid">About Me</a></li>
+              <li><a href="#secBot">Link</a></li>
+          </ul>
+      </div>
+
+      <section id="secMid" class="sec2">
+          <!--<img src="../img/wecode.png" alt="mainImage">-->
+          <div class="leftSide" style="width:50%;height:100vh;float:left;position:sticky;top:0;">
+              <article>
+                  <h2 style="margin: 300px 100px 100px; font-size: 81px;font-weight: 900;line-height: 1.2; text-align: right;background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone;">
+                      웹디자이너에서 <br>
+                      개발자로
+                  </h2>
+                  <p style="margin: 100px 100px 0; font-size: 21px;font-weight: 600; color: #8193b2; line-height: 1.5; text-align: right;">
+                      웹디자이너로 퍼블리싱까지 하면서 <br>
+                      프런트엔드 개발자에 관심이 생겼고 <br>
+                      조금 더 공부하고 싶은 욕심에 <br>
+                      이곳까지 오게 되었습니다.
+                  </p>
+              </article>
+          </div>
+          
+          <style>
+          
+              
+          </style>
+          
+          <div class="rightSide" style="">
+              <article style="">
+                  <ul class="gallary_ul">
+                      <li>
+                          <figure>
+                              <img src="http://wwwww.dothome.co.kr/images/test/con_img1.png" alt="서교동">
+                              <figcaption>서교동</figcaption>
+                          </figure>
+                      </li>
+                      <li>
+                          <figure>
+                              <img src="http://wwwww.dothome.co.kr/images/test/con_img2.png" alt="고양이">
+                              <figcaption>서교동 카페</figcaption>
+                          </figure>
+                      </li>
+                      <li>
+                          <figure>
+                              <img src="http://wwwww.dothome.co.kr/images/test/con_img3.png" alt="원효대교">
+                              <figcaption>원효대교</figcaption>
+                          </figure>
+                      </li>
+                      <li>
+                          <figure>
+                              <img src="http://wwwww.dothome.co.kr/images/test/con_img4.png" alt="마라도">
+                              <figcaption>마라도</figcaption>
+                          </figure>
+                      </li>
+                      <li>
+                          <figure>
+                              <img src="http://wwwww.dothome.co.kr/images/test/con_img5.png" alt="용두암">
+                              <figcaption>용두암</figcaption>
+                          </figure>
+                      </li>
+                      <li>
+                          <figure>
+                              <img src="http://wwwww.dothome.co.kr/images/test/con_img6.png" alt="광안대교">
+                              <figcaption>광안대교</figcaption>
+                          </figure>
+                      </li>
+                  </ul>
+              </article>
+          </div>
+          
+      </section>
+      
+      <style>
+      </style>
+
+      <section id="secBot" class="sec3">
+         
+          <!--<img src="../img/wecode.png" alt="mainImage">-->
+          <ul>
+              <li>
+                  <a href="https://github.com/smash009" target="_blank">
+                      <i class="fa-brands fa-github" title="Github"></i>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://velog.io/" target="_blank">
+                      <i class="fa-brands fa-vimeo" title="Velog"></i>
+                  </a>
+              </li>
+              <li>
+                  <a href="http://wwwww.dothome.co.kr/" target="_blank">
+                      <i class="fa-solid fa-house-chimney" title="Homepage"></i>
+                  </a>
+              </li>
+          </ul>
+          
+      </section>
+      
+  </div>
+  
+  
+  <footer>
+      <div class="footer" style="text-align: center;">
+          <p>Copyright © 2022 南璋鉉.</p>
+      </div>
+  </footer>
+  
+</body>
+</html>
