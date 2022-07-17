@@ -1,19 +1,19 @@
-* { margin: 0; padding: 0; border: 0; box-sizing: border-box; font-size: 100%; font: inherit; vertical-align: baseline; }
+* { margin: 0; padding: 0; border: 0; box-sizing: border-box; font: inherit; vertical-align: baseline; }
 ul, li { list-style: none; }
 a { text-decoration: none; }     
 body { width: 100%; line-height: 1; }
 html { scroll-behavior: smooth; }
 
 .skip_nav a { position: absolute; top: -9999px; }
-header { width: 100%; /*backdrop-filter: blur(5px);*/ background: #040d21; }
+header { width: 100%; background: #040d21; }
 nav { width: 1600px; height: 80px; margin: 0 auto; padding: 18px 0px; background: none; backdrop-filter: none; }
 nav::after { content: ''; display: block; clear: both; }
-nav .logoText { width: 20%; /*line-height: px;*/ float: left; }
+nav .logoText { width: 20%; float: left; }
 nav .logoText p { font-size: 41px; font-weight: 900; line-height: 41px; background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; text-align: center; }
 nav ul { width: 80%; float: left; }
 nav ul::after { content: ''; display: block; clear: both; }
-nav ul li { width: 33.33%; /*padding: 15px 0;*/ float: left; }
-nav ul li a { width: 100%; height: 100%; /*padding: 11px 0;*/ display: block; font-size: 31px; line-height: 41px; text-align: center; color: #fafafa; -webkit-text-stroke: none; text-stroke: none; }
+nav ul li { width: 33.33%; float: left; }
+nav ul li a { width: 100%; height: 100%; display: block; font-size: 31px; line-height: 41px; text-align: center; color: #fafafa; -webkit-text-stroke: none; text-stroke: none; }
 nav ul li:hover a { color: #040d21; background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; }
 
 .mainWrap { width: 100%; }
@@ -28,7 +28,6 @@ nav ul li:hover a { color: #040d21; background: -webkit-linear-gradient(-70deg, 
 .mainWrap section.sec1 .titleWrap h1 b { font-size: 141px; font-weight: 600; color: #db469f; }
 .mainWrap section.sec1 .titleWrap p { font-size: 31px; font-weight: 100; color: #fafafa; text-align: right; letter-spacing: 5px; }
 .mainWrap section.sec1 .imgWrap { width: 1080px; margin: 0px auto; }
-/*.mainWrap section.sec1 .imgWrap img { margin: 136px auto; }*/
 .mainWrap section.sec1 .imgWrap img { margin: 107px 0 107px 240px; }
 
 .content_nav { width: 100%; height: 80px; backdrop-filter: blur(5px); z-index: 9; position: sticky; top: 0; }
@@ -38,46 +37,38 @@ nav ul li:hover a { color: #040d21; background: -webkit-linear-gradient(-70deg, 
 .content_nav ul li a { width: 100%; height: 100%; padding: 25px 0; display: block; font-size: 31px; font-weight: 600; line-height: 21px; text-align: center; color: #333; -webkit-text-stroke: 1px #fff; text-stroke: 1px #fff; }
 .content_nav ul li:hover a { font-weight: 400; letter-spacing: 1px; background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; -webkit-text-stroke: 0; text-stroke: 0; }
 
-.mainWrap section.sec2 {/* height: calc(100vh - 80px); */ padding-top: 0px; background: #fff; }
-
+.mainWrap section.sec2 { padding-top: 0px; background: #fff; }
 .mainWrap section.sec2 .leftSide { width: 50%; height:100vh; min-height: 1080px; padding: 0 4%; float: left; position: sticky; top: 0; }
 .mainWrap section.sec2 .leftSide::after { content: ''; display: block; clear: both; }
 .mainWrap section.sec2 .leftSide h2 { margin: 300px 100px 100px; font-size: 81px;font-weight: 900;line-height: 1.2; text-align: right;background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; }
 .mainWrap section.sec2 .leftSide p { margin: 100px 100px 0; font-size: 21px;font-weight: 600; color: #8193b2; line-height: 1.5; text-align: right; }
 .mainWrap section.sec2 .rightSide { width: 50%; margin: 60px 0 100px; padding: 0 4%; float: left; }
 .mainWrap section.sec2 .rightSide::after { content: ''; display: block; clear: both; }
-/*.mainWrap section.sec2 .rightSide article > ul { height: inherit; }
-.mainWrap section.sec2 .rightSide article > ul > li { height: 400px; }
-.mainWrap section.sec2 .rightSide article > ul > li figure {  }
-.mainWrap section.sec2 .rightSide article > ul > li figure img { width: 100%; }
-.mainWrap section.sec2 .rightSide article > ul > li figure figcaption {  }*/
 .mainWrap section.sec2 .rightSide article { width: 100%; }
-.mainWrap section.sec2 .rightSide article ul.gallary_ul { width: 100%; display: flex; flex-basis: 1; flex-direction: row; flex-wrap: wrap; flex }
+.mainWrap section.sec2 .rightSide article ul.gallary_ul { width: 100%; display: flex; flex-basis: 1; flex-direction: row; flex-wrap: wrap; }
 .mainWrap section.sec2 .rightSide article ul.gallary_ul::after { content: ''; display: block; clear: both; }
-.mainWrap section.sec2 .rightSide article ul.gallary_ul li { width: 48%; margin: 4% 1%; }
+.mainWrap section.sec2 .rightSide article ul.gallary_ul li { width: 48%; margin: 4% 1%; transition: 0.5s; }
+.mainWrap section.sec2 .rightSide article ul.gallary_ul li:hover { box-shadow: 3px 3px 15px #777; transition: 0.5s; }
 .mainWrap section.sec2 .rightSide article ul.gallary_ul li figure {  }
 .mainWrap section.sec2 .rightSide article ul.gallary_ul li figure img { width: 100%; }
-.mainWrap section.sec2 .rightSide article ul.gallary_ul li figure figcaption { margin: 5% 0 0; font-size: 21px; text-align: center; }
+.mainWrap section.sec2 .rightSide article ul.gallary_ul li figure figcaption { margin: 5% 0; font-size: 21px; text-align: center; }
 
 
 .mainWrap section.sec3 { height: calc(100vh - 32px); padding: 275px 0; background: #040d21; }
-/*.mainWrap section.sec3 { padding: 275px 0 !important; }*/
 .mainWrap section.sec3 ul { width: 1400px; margin: 0 auto; }
 .mainWrap section.sec3 ul::after { content: ''; display: block; clear: both; }
 .mainWrap section.sec3 ul li { width: 31.33%; height: 452px; border: 9px solid #fff; border-radius: 51px; box-sizing: border-box; float: left; transition: 0.3s; }
 .mainWrap section.sec3 ul li:hover { background: #fff; border: 9px double #040d21; transition: 0.3s; }
 .mainWrap section.sec3 ul li:nth-child(2) { margin: 0 1.5%; }
-.mainWrap section.sec3 ul li a { width: 100%; height: 100%; padding: 47px; display: block; }
 .mainWrap section.sec3 ul li:nth-child(2) a { padding: 47px 62px; }
 .mainWrap section.sec3 ul li:nth-child(3) a { padding: 72px 47px; }
+.mainWrap section.sec3 ul li:nth-child(3) a i { font-size: 290px; }
+.mainWrap section.sec3 ul li a { width: 100%; height: 100%; padding: 47px; display: block; }
 .mainWrap section.sec3 ul li a i { font-size: 340px; color: #fff; transition: 0.5s; }
 .mainWrap section.sec3 ul li a svg { width: 300px; height: 340px; color: #fff; transition: 0.5s; }
 .mainWrap section.sec3 ul li:nth-child(1):hover a i { color: #db469f; transition: 0.5s; }
-/*.mainWrap section.sec3 ul li:nth-child(2):hover a i { color: #7d68d0; transition: 0.5s; }*/
 .mainWrap section.sec3 ul li:nth-child(2):hover a svg { color: #7d68d0; transition: 0.5s; }
-.mainWrap section.sec3 ul li:nth-child(3) a i { font-size: 290px; }
 .mainWrap section.sec3 ul li:nth-child(3):hover a i { color: #2188ff; transition: 0.5s; }
-/*.mainWrap section.sec3 ul li a img { width: 100%; }*/
 
 .footer { height: 32px; }
 .footer::after { content: ''; display: block; clear: both; }
@@ -88,7 +79,7 @@ nav ul li:hover a { color: #040d21; background: -webkit-linear-gradient(-70deg, 
     nav { width: 100%; height: inherit; margin: 0 auto; padding: 18px 0px; position: fixed; top: 0; backdrop-filter: blur(5px); z-index: 9; }
     nav .logoText { width: 100%; float: none; }
     nav ul { width: 100%; float: none; }
-    nav ul li { width: 33.33%; /*padding: 15px 0;*/ float: left; }
+    nav ul li { width: 33.33%; float: left; }
     nav ul li a { width: 100%; height: inherit; padding: 11px 0; display: block; font-size: 23.5px; font-weight: 600; line-height: 41px; text-align: center; color: #fafafa; -webkit-text-stroke: 1px #040d21; text-stroke: 1px #040d21; }
 
     .mainWrap section.sec1 { height: inherit; min-height: 100vh; padding: 120px 0 0 0; }
@@ -107,19 +98,17 @@ nav ul li:hover a { color: #040d21; background: -webkit-linear-gradient(-70deg, 
     .mainWrap section.sec2 .leftSide h2 { margin: 50px auto 50px; font-size: 41px;font-weight: 900;line-height: 1.2; text-align: right;background: -webkit-linear-gradient(-70deg, #a2facf 0%, #64acff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; -webkit-box-decoration-break: clone; }
     .mainWrap section.sec2 .leftSide p { margin: 50px auto 0; font-size: 15px;font-weight: 600; color: #8193b2; line-height: 1.5; text-align: right; }
     .mainWrap section.sec2 .rightSide { width: 100%; margin: 60px 0 100px; padding: 0 0.5%; float: none; }
+    .mainWrap section.sec2 .rightSide article ul.gallary_ul li:hover { box-shadow: none; }
     .mainWrap section.sec2 .rightSide article ul.gallary_ul li figure figcaption { margin: 5% 0 0; font-size: 13px; }
     
     .mainWrap section.sec3 { height: inherit; min-height: inherit; padding: 140px 0 100px; background: #040d21; }
     .mainWrap section.sec3 ul { width: 100%; margin: 0 auto; }
     .mainWrap section.sec3 ul li { width: 88%; height: 326px; margin: 20px 6%; border: 9px solid #fff; border-radius: 51px; float: none; text-align: center; }
     .mainWrap section.sec3 ul li:nth-child(2) { margin: 0 6%; text-align: center; }
-    .mainWrap section.sec3 ul li a { width: 100%; height: 100%; padding: 10px; display: block; }
     .mainWrap section.sec3 ul li:nth-child(2) a { padding: 2px; }
     .mainWrap section.sec3 ul li:nth-child(3) a { padding: 24px 0; }
-    .mainWrap section.sec3 ul li a i { font-size: 18em; color: #fff; transition: 0.5s; }
-    .mainWrap section.sec3 ul li a svg { width: 280px; height: 304px; color: #fff; transition: 0.5s; }
-    .mainWrap section.sec3 ul li:nth-child(1):hover a i { color: #db469f; transition: 0.5s; }
-    .mainWrap section.sec3 ul li:nth-child(2):hover a svg { color: #7d68d0; transition: 0.5s; }
     .mainWrap section.sec3 ul li:nth-child(3) a i { font-size: 16em; }
-    .mainWrap section.sec3 ul li:nth-child(3):hover a i { color: #2188ff; transition: 0.5s; }
+    .mainWrap section.sec3 ul li a { width: 100%; height: 100%; padding: 10px; display: block; }
+    .mainWrap section.sec3 ul li a i { font-size: 18em; }
+    .mainWrap section.sec3 ul li a svg { width: 280px; height: 304px; }
 }
