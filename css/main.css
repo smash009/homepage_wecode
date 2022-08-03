@@ -49,9 +49,16 @@ nav ul li:hover a { color: #040d21; background: -webkit-linear-gradient(-70deg, 
 .mainWrap section.sec2 .rightSide article ul.gallary_ul::after { content: ''; display: block; clear: both; }
 .mainWrap section.sec2 .rightSide article ul.gallary_ul li { width: 48%; margin: 4% 1%; transition: 0.5s; }
 .mainWrap section.sec2 .rightSide article ul.gallary_ul li:hover { box-shadow: 3px 3px 15px #777; transition: 0.5s; }
+.mainWrap section.sec2 .rightSide article ul.gallary_ul li figure { -webkit-transform: translateX(0); }
+.mainWrap section.sec2 .rightSide article ul.gallary_ul li figure img { width: 100%; }
+.mainWrap section.sec2 .rightSide article ul.gallary_ul li figure::before { content: ''; position: absolute; left: 0px; bottom: 0px; width: 0; height: 0; background: -webkit-linear-gradient(45deg, #efefef 45%, #aaa 50%, #ccc 60%, white); -webkit-transition-duration: 0.3s; }
+.mainWrap section.sec2 .rightSide article ul.gallary_ul li figure:hover::before { width: 85px; height: 85px; }
+.mainWrap section.sec2 .rightSide article ul.gallary_ul li figure figcaption { margin: 5% 0 0; padding: 0 0 5% 0; font-size: 21px; text-align: center; }
+/* .mainWrap section.sec2 .rightSide article ul.gallary_ul li { width: 48%; margin: 4% 1%; transition: 0.5s; }
+.mainWrap section.sec2 .rightSide article ul.gallary_ul li:hover { box-shadow: 3px 3px 15px #777; transition: 0.5s; }
 .mainWrap section.sec2 .rightSide article ul.gallary_ul li figure {  }
 .mainWrap section.sec2 .rightSide article ul.gallary_ul li figure img { width: 100%; }
-.mainWrap section.sec2 .rightSide article ul.gallary_ul li figure figcaption { margin: 5% 0; font-size: 21px; text-align: center; }
+.mainWrap section.sec2 .rightSide article ul.gallary_ul li figure figcaption { margin: 5% 0; font-size: 21px; text-align: center; } */
 
 
 .mainWrap section.sec3 { height: calc(100vh - 32px); padding: 275px 0; background: #040d21; }
