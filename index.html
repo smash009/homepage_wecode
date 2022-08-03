@@ -133,34 +133,46 @@
           
       </section>
 
-      <style>
-        .topBtnWrap { width: 60px; /*height: 30px;*/ border: 1px solid #ddd; position: fixed; bottom: 43px; right: 10px; display: none; }        
-        .topBtnWrap a { width: 100%; height: 100%; padding: 20px 0px; font-weight: 700; color: #fff; text-align: center; display: block; background: rgba(255, 255, 255, 0.5); }        
-
-      </style>
-
-      <div class="topBtnWrap" id="topBtnWrap">
+    <div class="topBtnWrap" id="topBtnWrap">
         <a href="#" id="ft_totop">TOP</a>
     </div>
     
     <script>
         
-        let topBtnWrap = document.querySelector('.topBtnWrap');
+        const topBtnWrap = document.querySelector('.topBtnWrap');
+        const topBtn = document.querySelector('#ft_totop');
         
         window.addEventListener('scroll', function() {
             
-            if(this.scrollY < 200){ // 200 기준으로 top box 생성
+            if(this.scrollY < 180) { // 200 기준으로 top box 생성
                 topBtnWrap.style.display = "none";
             } else {
+                // console.log(this.scrollY);
                 topBtnWrap.style.display = "block"; 
+                if(180 < this.scrollY) {
+                    topBtn.style.color = "#333";
+                }
+                if(1841 < this.scrollY) {
+                    topBtn.style.color = "#fff";
+                }
             }
         });
-        
-        let topBtn = document.querySelector('#ft_totop');
+
         topBtn.addEventListener('click', function(e) { 
             e.preventDefault(); // a 태그 작동을 멈추는 역할을 함.
             window.scrollTo({ top: 0 });
         })
+        
+        function onMouseMove(e) {
+            e.target.style.color = "#db469f";
+        };
+
+        function onMouseOut(e) {
+            e.target.style.color = "inherit";
+        };
+
+        topBtnWrap.addEventListener('mousemove', onMouseMove);
+        topBtnWrap.addEventListener('mouseout', onMouseOut);
     </script>
   </div>
 

@@ -1,6 +1,6 @@
 * { margin: 0; padding: 0; border: 0; box-sizing: border-box; font: inherit; vertical-align: baseline; }
 ul, li { list-style: none; }
-a { text-decoration: none; }     
+a { text-decoration: none; }
 body { width: 100%; line-height: 1; }
 html { scroll-behavior: smooth; }
 
@@ -76,6 +76,10 @@ nav ul li:hover a { color: #040d21; background: -webkit-linear-gradient(-70deg, 
 .mainWrap section.sec3 ul li:nth-child(1):hover a i { color: #db469f; transition: 0.5s; }
 .mainWrap section.sec3 ul li:nth-child(2):hover a svg { color: #7d68d0; transition: 0.5s; }
 .mainWrap section.sec3 ul li:nth-child(3):hover a i { color: #2188ff; transition: 0.5s; }
+
+.topBtnWrap { width: 60px; height: 60px; border: 1px solid #ddd; position: fixed; bottom: 43px; right: 10px; display: none; transition: 0.3s; }        
+.topBtnWrap a { width: 100%; height: 100%; padding: 20px 0px; color: #fff; font-weight: 700; text-align: center; display: block; background: rgba(255, 255, 255, 0.5); transition: 0.3s; }
+.topBtnWrap:hover a { color: #2188ff; }
 
 .footer { height: 32px; }
 .footer::after { content: ''; display: block; clear: both; }
