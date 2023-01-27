@@ -535,6 +535,10 @@ nav ul li:hover a {
     text-stroke: 1px #040d21;
   }
 
+  .mainWrap .contentWrap {
+    width: 100%;
+  }
+
   .mainWrap section.sec1 {
     height: inherit;
     min-height: 100vh;
@@ -564,12 +568,12 @@ nav ul li:hover a {
     letter-spacing: 5px;
   }
 
-  .mainWrap section.sec1 .imgWrap {
+  .mainWrap section.sec1 .contentWrap .imgWrap {
     width: 100%;
     margin: 0px auto;
   }
 
-  .mainWrap section.sec1 .imgWrap img {
+  .mainWrap section.sec1 .contentWrap .imgWrap img {
     margin: 30px auto 0px;
   }
 
@@ -591,7 +595,7 @@ nav ul li:hover a {
     padding: 100px 0 0 0;
   }
 
-  .mainWrap section.sec2 .leftSide {
+  .mainWrap section.sec2 .contentWrap .leftSide {
     width: 96%;
     height: inherit;
     min-height: 18px;
@@ -600,7 +604,7 @@ nav ul li:hover a {
     position: inherit;
   }
 
-  .mainWrap section.sec2 .leftSide h2 {
+  .mainWrap section.sec2 .contentWrap .leftSide h2 {
     margin: 50px auto 50px;
     font-size: 41px;
     font-weight: 900;
@@ -613,7 +617,7 @@ nav ul li:hover a {
     -webkit-box-decoration-break: clone;
   }
 
-  .mainWrap section.sec2 .leftSide p {
+  .mainWrap section.sec2 .contentWrap .leftSide p {
     margin: 50px auto 0;
     font-size: 15px;
     font-weight: 600;
@@ -622,18 +626,32 @@ nav ul li:hover a {
     text-align: right;
   }
 
-  .mainWrap section.sec2 .rightSide {
+  .mainWrap section.sec2 .contentWrap .rightSide {
     width: 100%;
     margin: 60px 0 100px;
     padding: 0 0.5%;
     float: none;
   }
 
-  .mainWrap section.sec2 .rightSide article ul.gallary_ul li:hover {
+  .mainWrap
+    section.sec2
+    .contentWrap
+    .rightSide
+    article
+    ul.gallary_ul
+    li:hover {
     box-shadow: none;
   }
 
-  .mainWrap section.sec2 .rightSide article ul.gallary_ul li figure figcaption {
+  .mainWrap
+    section.sec2
+    .contentWrap
+    .rightSide
+    article
+    ul.gallary_ul
+    li
+    figure
+    figcaption {
     margin: 5% 0 0;
     font-size: 13px;
   }
