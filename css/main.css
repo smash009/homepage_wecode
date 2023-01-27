@@ -545,22 +545,22 @@ nav ul li:hover a {
     padding: 120px 0 0 0;
   }
 
-  .mainWrap section.sec1 .titleWrap {
+  .mainWrap section.sec1 .contentWrap .titleWrap {
     width: 80%;
     position: absolute;
-    top: 60%;
+    top: 100%;
     left: 10%;
   }
 
-  .mainWrap section.sec1 .titleWrap h1 {
+  .mainWrap section.sec1 .contentWrap .titleWrap h1 {
     font-size: 51px;
   }
 
-  .mainWrap section.sec1 .titleWrap h1 b {
+  .mainWrap section.sec1 .contentWrap .titleWrap h1 b {
     font-size: 71px;
   }
 
-  .mainWrap section.sec1 .titleWrap p {
+  .mainWrap section.sec1 .contentWrap .titleWrap p {
     font-size: 19px;
     font-weight: 100;
     color: #fafafa;
