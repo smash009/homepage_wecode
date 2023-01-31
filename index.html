@@ -20,7 +20,15 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-JZST0W2ZEM"
     ></script>
-    <script src="./ga.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-JZST0W2ZEM");
+    </script>
   </head>
   <body>
     <div class="skip_nav">
