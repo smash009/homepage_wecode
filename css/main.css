@@ -345,6 +345,31 @@ nav ul li:hover a {
   -webkit-transition-duration: 0.3s;
 }
 
+.mainWrap section.sec2 .rightSide article ul.gallary_ul .modal_content {
+  display: none; /* 모달창 숨겨 놓기 */
+  position: fixed;
+  z-index: 99; /* 모달창을 제일 앞에 두기 */
+  padding: 100px 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* 스크롤 허용 auto */
+  cursor: pointer; /* 마우스 손가락모양 */
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.mainWrap
+  section.sec2
+  .rightSide
+  article
+  ul.gallary_ul
+  .modal_content
+  .modal_content_image {
+  display: block;
+  width: 50%;
+}
+
 .mainWrap
   section.sec2
   .rightSide

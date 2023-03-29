@@ -109,41 +109,83 @@
           <div class="rightSide">
             <article>
               <ul class="gallary_ul">
-                <li>
+                <li data-index="1" class="gallary_image">
                   <figure>
                     <figcaption>월정사</figcaption>
                     <img src="img/con_img1.png" alt="월정사" />
                   </figure>
+                  <div class="modal_content">
+                    <img
+                      src="img/con_img1.png"
+                      class="modal_content_image"
+                      alt="월정사"
+                    />
+                  </div>
                 </li>
-                <li>
+                <li data-index="2" class="gallary_image">
                   <figure>
                     <figcaption>이문희</figcaption>
                     <img src="img/con_img2.png" alt="이문희" />
                   </figure>
+                  <div class="modal_content">
+                    <img
+                      src="img/con_img2.png"
+                      class="modal_content_image"
+                      alt="이문희"
+                    />
+                  </div>
                 </li>
-                <li>
+                <li data-index="3" class="gallary_image">
                   <figure>
                     <figcaption>하이드아웃</figcaption>
                     <img src="img/con_img3.png" alt="하이드아웃" />
                   </figure>
+                  <div class="modal_content">
+                    <img
+                      src="img/con_img3.png"
+                      class="modal_content_image"
+                      alt="하이드아웃"
+                    />
+                  </div>
                 </li>
-                <li>
+                <li data-index="4" class="gallary_image">
                   <figure>
                     <figcaption>와이앤비 법률사무소</figcaption>
                     <img src="img/con_img4.png" alt="와이앤비 법률사무소" />
                   </figure>
+                  <div class="modal_content">
+                    <img
+                      src="img/con_img4.png"
+                      class="modal_content_image"
+                      alt="와이앤비 법률사무소"
+                    />
+                  </div>
                 </li>
-                <li>
+                <li data-index="5" class="gallary_image">
                   <figure>
                     <figcaption>다고이게임스</figcaption>
                     <img src="img/con_img5.png" alt="다고이게임스" />
                   </figure>
+                  <div class="modal_content">
+                    <img
+                      src="img/con_img5.png"
+                      class="modal_content_image"
+                      alt="다고이게임스"
+                    />
+                  </div>
                 </li>
-                <li>
+                <li data-index="6" class="gallary_image">
                   <figure>
                     <figcaption>홍천산나물축제</figcaption>
                     <img src="img/con_img6.png" alt="홍천산나물축제" />
                   </figure>
+                  <div class="modal_content">
+                    <img
+                      src="img/con_img6.png"
+                      class="modal_content_image"
+                      alt="홍천산나물축제"
+                    />
+                  </div>
                 </li>
               </ul>
             </article>
@@ -187,6 +229,8 @@
       <script>
         const topBtnWrap = document.querySelector(".topBtnWrap");
         const topBtn = document.querySelector("#ft_totop");
+        const dataNumber = document.getElementsByClassName("gallary_image");
+        const bodyTag = document.getElementsByTagName("body")[0];
 
         window.addEventListener("scroll", function () {
           if (this.scrollY < 180) {
@@ -201,6 +245,26 @@
             }
           }
         });
+
+        for (let i = 0; i < dataNumber.length; i++) {
+          dataNumber[i].addEventListener("click", function () {
+            const index = this.getAttribute("data-index");
+            const modal_content =
+              this.getElementsByClassName("modal_content")[0];
+
+            if (
+              !modal_content.style.display ||
+              modal_content.style.display === "none"
+            ) {
+              modal_content.style.display = "inline-block";
+              bodyTag.style.overflowY = "hidden";
+              console.log(index, modal_content.style, bodyTag);
+            } else if (modal_content.style.display === "inline-block") {
+              modal_content.style.display = "none";
+              bodyTag.style.overflowY = "inherit";
+            }
+          });
+        }
 
         topBtn.addEventListener("click", function (e) {
           e.preventDefault();
