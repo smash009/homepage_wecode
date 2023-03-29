@@ -319,6 +319,8 @@ nav ul li:hover a {
 }
 
 .mainWrap section.sec2 .rightSide article ul.gallary_ul li figure {
+  height: 460px;
+  overflow: hidden;
   -webkit-transform: translateX(0);
 }
 
