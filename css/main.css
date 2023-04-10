@@ -165,6 +165,15 @@ nav ul li:hover a {
 }
 
 .mainWrap section.sec1 .contentWrap .titleWrap p {
+  font-weight: 500;
+}
+
+.mainWrap section.sec1 .contentWrap .titleWrap p span {
+  font-weight: 900;
+  color: #2188ff;
+}
+
+.mainWrap section.sec1 .contentWrap .titleWrap p {
   font-size: 31px;
   font-weight: 100;
   color: #fafafa;
